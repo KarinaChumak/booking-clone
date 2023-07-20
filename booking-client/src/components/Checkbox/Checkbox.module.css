@@ -1,0 +1,49 @@
+.checkboxInputGroup label {
+  font-size: 1.4rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.checkboxInputGroup {
+  display: flex;
+  gap: 1rem;
+}
+
+.checkboxInputGroup input {
+  cursor: pointer;
+
+  height: 2rem;
+  width: 2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 1px solid #34495e;
+  border-radius: 2px;
+  outline: none;
+  transition-duration: 0.3s;
+  display: block;
+}
+
+.checkbox {
+  position: relative;
+  cursor: pointer;
+}
+
+.checked input {
+  background-color: var(--color-text-1);
+  border: none;
+}
+
+.checked div::before {
+  content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="white"><path d="M56.33 102a6 6 0 0 1-4.24-1.75L19.27 67.54A6.014 6.014 0 1 1 27.74 59l27.94 27.88 44-58.49a6 6 0 1 1 9.58 7.22l-48.17 64a5.998 5.998 0 0 1-4.34 2.39z"></path></svg>');
+  display: block;
+  text-align: center;
+  position: absolute;
+
+  left: 50%;
+  width: 1.4rem;
+  height: 1.4rem;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}

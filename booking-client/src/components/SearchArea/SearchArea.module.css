@@ -1,0 +1,25 @@
+.searchArea {
+  position: relative;
+  background-color: var(--color-brand--1);
+}
+.intro {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 6rem 0;
+  margin-bottom: 10rem;
+}
+
+.intro h1,
+h3 {
+  /* margin: 0 4rem; */
+}
+.intro h1 {
+  font-size: 4.4rem;
+}
+
+.intro h3 {
+  font-size: 2rem;
+  font-weight: 300;
+}

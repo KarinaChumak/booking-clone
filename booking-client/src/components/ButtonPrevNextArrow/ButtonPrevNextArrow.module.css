@@ -1,0 +1,13 @@
+.button {
+  background-color: white;
+  border: none;
+  box-shadow: 1px 1px 1px 1px #a49f9f36;
+  border-radius: 100%;
+}
+
+.button svg {
+  width: 2rem;
+  height: 2rem;
+  fill: var(--color-grey-2);
+  vertical-align: middle;
+}

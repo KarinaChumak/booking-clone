@@ -1,0 +1,52 @@
+.mainHeader {
+  background-color: var(--color-brand--1);
+  color: var(--color-text-0);
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2rem 0;
+}
+
+.headerOptions {
+  display: flex;
+  align-items: center;
+}
+
+.headerOptions {
+  display: flex;
+  gap: 2.4rem;
+  font-size: 1.4rem;
+  align-items: center;
+}
+
+.logo {
+  float: left;
+  padding: 1rem 2rem;
+  font-size: 2.4rem;
+}
+
+.countryImg {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+}
+
+.svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: white;
+}
+
+.text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.8rem;
+}

@@ -1,0 +1,27 @@
+.card {
+  padding: 1.4rem;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px 3px #a49f9f36;
+  flex: 1;
+
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+}
+
+.card img {
+  width: 7rem;
+
+  border-radius: 5px;
+}
+
+.card .title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-grey-2);
+}
+
+.card p {
+  font-size: 1.4rem;
+  color: var(--color-grey-0);
+}

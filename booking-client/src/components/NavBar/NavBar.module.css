@@ -1,0 +1,45 @@
+.mainHeader {
+  background-color: var(--color-brand--1);
+  color: var(--color-text-0);
+}
+
+.navBar {
+  /* margin: 0 8.5rem; */
+
+  display: flex;
+}
+
+.optionsList {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  padding: 1.2rem 0;
+}
+
+.optionsList a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  padding: 1.1rem 1.6rem;
+  border-radius: 50px;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.optionsList a:hover {
+  background-color: var(--color-blue-light--1);
+}
+
+.optionsList a:global(.active) {
+  /* color: var(--color-brand--2); */
+  border: 1px solid white;
+}
+
+.svg {
+  display: block;
+  width: 2rem;
+  fill: white;
+  line-height: 2rem;
+}

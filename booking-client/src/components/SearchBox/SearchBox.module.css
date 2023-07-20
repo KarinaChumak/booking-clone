@@ -1,0 +1,138 @@
+.searchBar {
+  display: flex;
+  background-color: var(--color-brand--2);
+  padding: 4px;
+  gap: 0.4rem;
+  justify-content: center;
+  box-shadow: 0px 6px 8px 0px #a49f9f36;
+}
+.searchBar div {
+  flex: 1;
+}
+
+.searchForm {
+  width: calc(100% - 16rem);
+  /* max-width: 1280px; */
+  max-width: 1100px;
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -3rem);
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 2px;
+  position: relative;
+}
+
+.inputGroup svg {
+  fill: var(--color-grey-0);
+  width: 2.4rem;
+}
+
+.iconLeft {
+  position: absolute;
+  top: 50%;
+  margin-left: 1rem;
+  transform: translate(0, -50%);
+}
+
+.iconRight {
+  width: 2rem;
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-right: 1rem;
+  transform: translate(0, -50%);
+}
+
+.inputGroup input {
+  border: none;
+  padding: 1rem 2rem;
+  padding-left: 4rem;
+  width: 100%;
+}
+
+.inputGroup input::placeholder {
+  color: black;
+  font-size: 1.4rem;
+}
+
+.dateInput {
+  background-color: white;
+  border-radius: 2px;
+  cursor: pointer;
+
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  position: relative;
+}
+
+.dateInput svg {
+  width: 2.4rem;
+  fill: var(--color-grey-0);
+  margin-left: 1rem;
+}
+
+.dateInput span {
+  display: block;
+}
+
+.dateInput button {
+  border: none;
+  background-color: white;
+  font-size: 1.4rem;
+}
+
+.peopleSelect {
+  background-color: white;
+  border-radius: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 1.4rem;
+}
+
+.peopleSelect svg {
+  width: 2.4rem;
+  fill: var(--color-grey-0);
+  margin-left: 1rem;
+}
+
+.peopleSelect p {
+  padding-left: 4rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  background-color: var(--color-text-1);
+  border: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.travelOptions {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.4rem;
+}
+
+.rangePicker {
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: translate(0, 7rem);
+  z-index: 11;
+
+  box-shadow: 0px 7px 20px 8px #a49f9f55;
+}

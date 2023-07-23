@@ -1,8 +1,8 @@
 import styles from './RecentSearchCard.module.css';
 
-function RecentSearchCard({ location }) {
+function RecentSearchCard({ location, style }) {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} style={style}>
       <img src={location.locationImage}></img>
       <div>
         <p className={styles.title}>{location.locationName}</p>

@@ -1,9 +1,16 @@
 import styles from './ButtonPrevNextArrow.module.css';
 
-function ButtonPrevNextArrow({ type = 'next', onClick }) {
+function ButtonPrevNextArrow({
+  type = 'next',
+  onClick,
+  className = '',
+}) {
   if (type === 'next')
     return (
-      <button className={styles.button} onClick={onClick}>
+      <button
+        className={`${styles.button} ${className}`}
+        onClick={onClick}
+      >
         <svg
           viewBox="0 0 24 24"
           role="presentation"
@@ -16,7 +23,10 @@ function ButtonPrevNextArrow({ type = 'next', onClick }) {
     );
   if (type === 'prev')
     return (
-      <button className={styles.button} onClick={onClick}>
+      <button
+        className={`${styles.button} ${className}`}
+        onClick={onClick}
+      >
         <svg
           viewBox="0 0 24 24"
           role="presentation"

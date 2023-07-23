@@ -6,48 +6,45 @@ import ButtonPrevNextArrow from '../ButtonPrevNextArrow/ButtonPrevNextArrow';
 
 // This component showes any passed children as a horisontal list with two arrows
 
-function HorizontalScrolList({ numItemsToShow, children }) {
-  const childrenList = Children.toArray(children);
-
+function HorizontalScrolList({ elementWidth, children }) {
   // Number of an element being showed last
-  const [currentViewPoint, setCurrentViewPoint] =
-    useState(numItemsToShow);
+  const [index, setIndex] = useState(0);
+  console.log(children);
 
   function handleNextClick() {
-    // if (currentViewPoint < childrenList.length - 1)
-    setCurrentViewPoint((currentViewPoint) => currentViewPoint + 1);
+    if (index < children.length - 1) setIndex((i) => i + 1);
   }
 
   function handlePrevClick() {
-    // if (currentViewPoint > numItemsToShow)
-    setCurrentViewPoint((currentViewPoint) => currentViewPoint - 1);
+    if (index > 0) setIndex((i) => i - 1);
   }
 
   return (
-    <div>
-      <motion.div
-        className={styles.resultsList}
-        layout
-        transition={{
-          type: 'spring',
-          stiffness: 40,
-        }}
-      >
-        {childrenList.slice(
-          currentViewPoint - numItemsToShow,
-          currentViewPoint
-        )}
-      </motion.div>
-      {currentViewPoint > numItemsToShow && (
+    <div className={styles.listContainer}>
+      <div className={styles.hidden}>
+        <motion.div
+          animate={{
+            x: `-${index * Math.round(elementWidth)}px`,
+          }}
+          // transition={{ duration: 0.5, ease: 'circOut' }}
+          className={styles.resultsList}
+        >
+          {children}
+        </motion.div>
+      </div>
+
+      {index > 0 && (
         <ButtonPrevNextArrow
           type="prev"
           onClick={handlePrevClick}
+          className={styles.buttonLeft}
         ></ButtonPrevNextArrow>
       )}
-      {currentViewPoint < childrenList.length && (
+      {index < children.length && (
         <ButtonPrevNextArrow
           type="next"
           onClick={handleNextClick}
+          className={styles.buttonRight}
         ></ButtonPrevNextArrow>
       )}
     </div>

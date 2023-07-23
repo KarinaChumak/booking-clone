@@ -44,18 +44,32 @@ const tmpSearchList = [
 ];
 
 const CARDS_TO_SHOW = 3;
+const container_width = 1100; //TODO: figure out how to get it programmatically
 
 function RecentSearches() {
   const [recentSearches, setRecentSearches] = useState(tmpSearchList);
 
+  const margin = 10;
+  const style = {
+    flexBasis:
+      (container_width - CARDS_TO_SHOW * margin * 2) / CARDS_TO_SHOW,
+    marginRight: 10,
+    marginLeft: 10,
+  };
+
   return (
     <div className={styles.recentSearches}>
       <h3> Your recent searches</h3>
-      <HorizontalScrolList numItemsToShow={CARDS_TO_SHOW}>
+      <HorizontalScrolList
+        elementWidth={
+          style.flexBasis + style.marginRight + style.marginRight
+        }
+      >
         {recentSearches.map((location) => (
           <RecentSearchCard
             location={location}
             key={location.locationId}
+            style={style}
           ></RecentSearchCard>
         ))}
       </HorizontalScrolList>

@@ -1,0 +1,60 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-100);
+
+  border-radius: 1rem;
+
+  overflow: hidden;
+  margin: 1rem 1rem;
+}
+
+.card img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: block;
+
+  object-fit: cover;
+  width: 100%;
+  height: 24rem;
+}
+
+.propertyDetails {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0.8rem;
+  gap: 2rem;
+}
+.propertyDetails p {
+  font-size: 1.2rem;
+}
+
+.propertyDetails h4 {
+  font-size: 1.4rem;
+}
+.propertyDetails h3 {
+  font-size: 1.8rem;
+}
+.ratingDetails {
+  display: flex;
+  align-items: center;
+
+  gap: 0.2rem;
+}
+
+.reviewSummary {
+  font-weight: 600;
+}
+
+.priceDetails {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.rating {
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 500;
+}

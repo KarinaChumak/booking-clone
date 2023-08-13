@@ -1,2 +1,9 @@
-.title {
+.mainPage p {
+  font-size: 1.6rem;
+  color: var(--color-grey-0);
+}
+
+.mainPage h3 {
+  font-size: 2.4rem;
+  text-align: left;
 }

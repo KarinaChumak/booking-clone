@@ -10,7 +10,7 @@ function SearchArea() {
           <h1>Find your next stay</h1>
           <h3>Search low prices on hotels, homes and much more...</h3>
         </div>
-        <SearchBox></SearchBox>
+        <SearchBox showTravelOptions={true}></SearchBox>
       </Container>
     </div>
   );

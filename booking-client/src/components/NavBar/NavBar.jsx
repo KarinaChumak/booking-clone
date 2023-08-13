@@ -10,7 +10,7 @@ function NavBar() {
         <nav className={styles.navBar}>
           <ul className={styles.optionsList}>
             <li>
-              <NavLink to="/stays">
+              <NavLink to="/stays" className="active">
                 <span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

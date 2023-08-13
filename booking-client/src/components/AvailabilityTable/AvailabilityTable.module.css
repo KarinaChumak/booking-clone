@@ -1,0 +1,165 @@
+.availabilityContainer {
+  margin: 5rem 0;
+
+  margin-bottom: 100rem;
+}
+
+.availabilityContainer h1 {
+  font-size: 2.4rem;
+}
+
+.availabilityTable {
+  margin-top: 2rem;
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+}
+
+.availabilityTable th,
+td {
+  border: 1px solid var(--color-blue-bright-02);
+  border-bottom: 2px solid var(--color-blue-bright-02);
+}
+
+.availabilityTable td {
+  vertical-align: top;
+  padding: 1rem;
+}
+.availabilityTable th {
+  padding: 1rem;
+  font-size: 1.4rem;
+  text-align: left;
+  color: white;
+  background-color: var(--color-blue-light--3);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.availabilityTable .priceHeader {
+  background-color: var(--color-brand--1);
+}
+
+.availabilityTable tr:first-child th {
+  border-top: 0;
+}
+.availabilityTable tr:last-child td {
+}
+.availabilityTable tr td:first-child,
+.availabilityTable tr th:first-child {
+  border-left: 0;
+  width: 30%;
+}
+.availabilityTable tr td:last-child,
+.availabilityTable tr th:last-child {
+  border-right: 0;
+}
+
+.roomFeatures {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.roomDescription h3 {
+  line-height: 1.2;
+  font-size: 1.8rem;
+  color: var(--color-text-1);
+  margin-bottom: 1rem;
+}
+
+.singleRoomFeature {
+  display: flex;
+  font-size: 1.2rem;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.singleRoomFeature span {
+  font-size: 0;
+}
+
+.singleRoomFeature svg {
+  width: 1.2rem;
+}
+
+.bedInfo {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.numPeople {
+  display: flex;
+  padding: 0.2rem;
+  gap: 0.3rem;
+}
+
+.numPeople span {
+  /* font-size: 0; */
+}
+.numPeople svg {
+  height: 1.4rem;
+}
+
+.price h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.price p {
+  color: var(--color-grey-0);
+  font-size: 1.2rem;
+}
+
+.paymentOptions {
+  flex-direction: column;
+  fill: var(--color-green-1);
+  color: var(--color-green-1);
+  font-size: 1.2rem;
+}
+
+.paymentOption {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.8rem;
+}
+
+.paymentOption p {
+  font-size: 1.2rem;
+}
+
+.paymentOption svg {
+  display: block;
+  height: 1.4rem;
+}
+
+.availabilityTable select {
+  width: 5rem;
+}
+
+.reserveColumn {
+  position: sticky;
+  top: 80px;
+}
+
+.reserveColumn ul {
+  margin: 1rem;
+  font-size: 1.4rem;
+  width: 100%;
+}
+
+.fixedDiv {
+  position: fixed;
+  top: 90px;
+  right: 100px;
+}
+
+.dummy {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.dummy ul {
+  margin: 1rem;
+}

@@ -1,14 +1,10 @@
 import styles from './ButtonPrevNextArrow.module.css';
 
-function ButtonPrevNextArrow({
-  type = 'next',
-  onClick,
-  className = '',
-}) {
+function ButtonPrevNextArrow({ onClick, type = 'next' }) {
   if (type === 'next')
     return (
       <button
-        className={`${styles.button} ${className}`}
+        className={`${styles.button}  ${styles.buttonRight}`}
         onClick={onClick}
       >
         <svg
@@ -21,10 +17,10 @@ function ButtonPrevNextArrow({
         </svg>
       </button>
     );
-  if (type === 'prev')
+  else if (type === 'prev')
     return (
       <button
-        className={`${styles.button} ${className}`}
+        className={`${styles.button}  ${styles.buttonLeft}`}
         onClick={onClick}
       >
         <svg
@@ -37,7 +33,7 @@ function ButtonPrevNextArrow({
         </svg>
       </button>
     );
-  return null;
+  else return null;
 }
 
 export default ButtonPrevNextArrow;

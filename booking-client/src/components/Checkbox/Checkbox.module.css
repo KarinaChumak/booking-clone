@@ -7,6 +7,7 @@
 .checkboxInputGroup {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .checkboxInputGroup input {
@@ -33,6 +34,7 @@
 .checked input {
   background-color: var(--color-text-1);
   border: none;
+  display: block;
 }
 
 .checked div::before {

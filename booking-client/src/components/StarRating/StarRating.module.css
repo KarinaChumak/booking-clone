@@ -1,0 +1,15 @@
+.starContainer {
+  display: 'flex';
+  align-items: center;
+  justify-content: center;
+}
+
+.star {
+  display: inline-block;
+
+  line-height: 1;
+}
+
+.star svg {
+  display: block;
+}

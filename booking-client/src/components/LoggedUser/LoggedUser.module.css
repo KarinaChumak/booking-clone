@@ -1,0 +1,32 @@
+.loggedUser {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.loggedUser:hover {
+  background-color: var(--color-blue-light--1);
+}
+.loggedUser img {
+  border-radius: 100px;
+  height: 3.2rem;
+  border: 2px solid var(--color-brand--2);
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details h4 {
+  line-height: 1.2;
+}
+.details p {
+  padding-top: 0;
+  color: var(--color-brand--2);
+  font-size: 1.2rem;
+}

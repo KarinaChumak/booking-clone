@@ -1,0 +1,4 @@
+/* Nice trick to override overflow:hidden in a Carousel component, so the buttons can overflow it */
+.wrapper {
+  transform: scale(1);
+}

@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import styles from './RecentSearches.module.css';
 import RecentSearchCard from '../RecentSearchCard/RecentSearchCard';
-
-import ButtonPrevNextArrow from '../ButtonPrevNextArrow/ButtonPrevNextArrow';
-import HorizontalScrolList from '../HorizontalScrolList/HorizontalScrolList';
+import ItemsCarousel from '../ItemsCarousel/ItemsCarousel';
 
 const tmpSearchList = [
   {
@@ -43,36 +41,42 @@ const tmpSearchList = [
   },
 ];
 
-const CARDS_TO_SHOW = 3;
-const container_width = 1100; //TODO: figure out how to get it programmatically
+const responsive = {
+  superLargeDesktop: {
+    // the naming can be any, depends on you.
+    breakpoint: { max: 4000, min: 3000 },
+    items: 5,
+  },
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+  },
+};
 
 function RecentSearches() {
-  const [recentSearches, setRecentSearches] = useState(tmpSearchList);
-
-  const margin = 10;
-  const style = {
-    flexBasis:
-      (container_width - CARDS_TO_SHOW * margin * 2) / CARDS_TO_SHOW,
-    marginRight: 10,
-    marginLeft: 10,
-  };
+  const [recentSearches] = useState(tmpSearchList);
 
   return (
     <div className={styles.recentSearches}>
       <h3> Your recent searches</h3>
-      <HorizontalScrolList
-        elementWidth={
-          style.flexBasis + style.marginRight + style.marginRight
-        }
-      >
-        {recentSearches.map((location) => (
-          <RecentSearchCard
-            location={location}
-            key={location.locationId}
-            style={style}
-          ></RecentSearchCard>
-        ))}
-      </HorizontalScrolList>
+      <div className={styles.carousel}>
+        <ItemsCarousel responsive={responsive}>
+          {recentSearches.map((location) => (
+            <RecentSearchCard
+              location={location}
+              key={location.locationId}
+            ></RecentSearchCard>
+          ))}
+        </ItemsCarousel>
+      </div>
     </div>
   );
 }

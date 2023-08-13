@@ -4,6 +4,12 @@ import NavBar from '../../components/NavBar/NavBar';
 import SearchArea from '../../components/SearchArea/SearchArea';
 import RecentSearches from '../../components/RecentSearches/RecentSearches';
 import Container from '../../components/Container/Container';
+import BrowseByPropertyType from '../../components/BrowseByPropertyType/BrowseByPropertyType';
+import TrendingDestinations from '../../components/TrendingDestinations/TrendingDestinations';
+
+import TopUniqueProperties from '../../components/TopUniqueProperties/TopUniqueProperties';
+
+import FindNextBanner from '../../components/FindNextBanner/FindNextBanner';
 function MainPage() {
   return (
     <>
@@ -13,9 +19,13 @@ function MainPage() {
       </header>
       <main>
         <SearchArea></SearchArea>
-        <section>
+        <section className={styles.mainPage}>
           <Container>
             <RecentSearches></RecentSearches>
+            <BrowseByPropertyType></BrowseByPropertyType>
+            <TrendingDestinations></TrendingDestinations>
+            <TopUniqueProperties></TopUniqueProperties>
+            <FindNextBanner></FindNextBanner>
           </Container>
         </section>
       </main>

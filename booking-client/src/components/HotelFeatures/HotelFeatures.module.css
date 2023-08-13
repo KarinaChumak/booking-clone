@@ -1,0 +1,28 @@
+.features {
+  display: flex;
+  gap: 1rem;
+  margin: 3rem 0rem;
+  flex-wrap: wrap;
+}
+
+.feature {
+  padding: 1.4rem 1rem;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  border: 1px solid var(--color-grey-light-1);
+  border-radius: 2px;
+  flex-grow: 1;
+  max-width: 50%;
+}
+
+.feature span {
+  display: inline-block;
+  line-height: 75%;
+}
+.feature svg {
+  width: 3rem;
+  fill: var(--color-grey-1);
+}

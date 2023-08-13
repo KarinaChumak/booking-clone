@@ -1,0 +1,43 @@
+.userMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  transform: translate(0, 95%);
+
+  width: 200px;
+  border-radius: 2px;
+  background-color: white;
+  color: black;
+  z-index: 10;
+  padding: 2px 0;
+}
+
+.menuItem {
+  display: flex;
+  gap: 1rem;
+  padding: 1.2rem 1.6rem;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.menuItem:hover {
+  background-color: var(--color-grey-light-0);
+}
+
+.menuItem svg {
+  height: 1.8rem;
+  fill: var(--color-grey-1);
+}
+
+.menuItem p {
+  font-size: 1.4rem;
+  color: var(--color-grey-2);
+}
+
+.userMenu button {
+  background-color: inherit;
+  border: none;
+}

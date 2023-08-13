@@ -1,0 +1,9 @@
+.trendingDest {
+  margin-top: 4rem;
+}
+
+.row {
+  display: flex;
+  gap: 1.6rem;
+  margin-top: 1.6rem;
+}

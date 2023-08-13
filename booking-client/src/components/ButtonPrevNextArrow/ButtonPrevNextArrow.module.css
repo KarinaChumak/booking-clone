@@ -1,14 +1,41 @@
 .button {
   background-color: white;
   border: none;
-  box-shadow: 1px 1px 1px 1px #a49f9f36;
+  box-shadow: var(--shadow-100);
+
   border-radius: 100%;
   cursor: pointer;
+  position: fixed;
+
+  z-index: 1;
+}
+
+.button:active,
+.button:focus {
+  box-shadow: 0px 0px 0px 3px #0071c260;
+}
+
+.button:active,
+.button:active {
+  transform: translate(0, -45%);
 }
 
 .button svg {
-  width: 2.8rem;
-  height: 2.8rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  margin: 0.4rem;
   fill: var(--color-grey-2);
   vertical-align: middle;
+}
+
+.buttonLeft {
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.buttonRight {
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
 }

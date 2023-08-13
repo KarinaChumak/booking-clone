@@ -1,0 +1,165 @@
+.hotelLayout {
+  margin-top: 2rem;
+
+  display: flex;
+  gap: 1.8rem;
+  height: 85vh;
+}
+
+.searchSidebar {
+  flex: 1 1 0;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.hotelSummaryContainer {
+  flex: 3 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.summaryHeaderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.highlightsContainer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.highlightTag {
+  padding: 0.2rem 0.4rem;
+  background-color: var(--color-grey-light-3);
+  font-size: 1.2rem;
+  border-radius: 2px;
+}
+
+.likeButton svg {
+  display: block;
+  height: 2.4rem;
+}
+.likeButton {
+  padding: 0.8rem;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  float: right;
+}
+
+.likeButton:hover {
+  background-color: var(--color-blue-light--2);
+}
+
+.buttonsContainer {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.4rem;
+}
+
+.reserveButton {
+  border: none;
+  padding: 1rem 2rem;
+  background-color: var(--color-text-1);
+  color: white;
+  width: 100%;
+  font-size: 1.4rem;
+  border-radius: 3px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.reserveButton:hover {
+  background-color: var(--color-blue-light--1);
+}
+
+.titleContainer h3 {
+  font-size: 2.6rem;
+  margin-top: -1rem;
+}
+
+.mapPin {
+  display: inline-block;
+  width: 15px;
+  height: 23px;
+  margin-right: 0;
+  background: url(https://cf.bstatic.com/static/img/map/cta_material/map_cta_pin_small_sprite/282fe351577daee951a83d531ff1a065e74a5d04.png)
+    no-repeat;
+  margin-top: -2px;
+  background-size: 15px 46px;
+  background-position: 0 0;
+  vertical-align: middle;
+}
+
+.address {
+  display: flex;
+  gap: 1rem;
+}
+
+.address p {
+  font-size: 1.4rem;
+}
+
+.hotelDetails {
+}
+
+.descriptionContainer {
+  display: flex;
+  gap: 4rem;
+}
+
+.description {
+  flex: 5 1 0;
+  font-size: 1.4rem;
+}
+
+.description p {
+  margin-bottom: 1rem;
+}
+.reserveContainer {
+  flex: 2 1 0;
+  padding: 2rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--color-blue-light--0);
+  width: 100%;
+}
+
+.reserveContainer h3 {
+  font-size: 1.6rem;
+}
+
+.reserveContainer h4 {
+  font-size: 1.4rem;
+}
+.reserveContainer .regText {
+  font-size: 1.4rem;
+  color: var(--color-grey-1);
+  margin-bottom: 1rem;
+}
+.savePropertyButton {
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--color-blue-light--0);
+  border: 1px solid var(--color-text-1);
+  font-size: 1.4rem;
+  color: var(--color-text-1);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.savePropertyButton:hover {
+  background-color: var(--color-blue-light--0-shaded);
+}
+.savePropertyButton svg {
+  width: 2rem;
+}

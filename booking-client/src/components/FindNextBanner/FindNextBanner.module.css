@@ -1,0 +1,148 @@
+.content {
+  /* height: 28rem; */
+  border: 2px solid var(--color-grey-3);
+  border-radius: 2px;
+  margin-bottom: 20rem;
+  overflow: hidden;
+}
+
+.mainBanner {
+  display: flex;
+  justify-content: space-between;
+  min-height: 230px;
+  overflow: hidden;
+
+  text-align: center;
+  text-decoration: none;
+}
+
+.boxFirst {
+  flex-grow: 1;
+  position: relative;
+}
+.orangeBall {
+  background-color: var(--color-brand--2);
+  border-radius: 50%;
+  bottom: 40px;
+  height: 64px;
+  left: -20px;
+  position: absolute;
+  width: 64px;
+}
+
+.roundContainer {
+  background-color: var(--color-text-1);
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -10rem 0;
+  flex-grow: 3;
+  min-width: 400px;
+
+  padding-left: 15rem;
+  /* position: relative; */
+}
+
+.imgContainer {
+  max-width: 38rem;
+  width: 40%;
+  flex-grow: 2;
+}
+.imgContainer img {
+  width: 100%;
+}
+
+.sliderContainer {
+  overflow: hidden;
+  height: 4rem;
+
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+
+.sliderContainerText {
+  margin: 0;
+  float: left;
+  display: block;
+}
+.roundContainerText {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  text-align: left;
+  color: var(--color-text-0);
+  display: inline-block;
+  margin: 4px;
+}
+
+.sliderContainerList {
+  margin-left: 1rem;
+  padding-left: 11rem;
+  text-align: left;
+  list-style: none;
+
+  -webkit-animation-name: change;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+
+  animation-name: change;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.sliderContainerList span {
+  text-decoration: underline var(--color-brand--2);
+}
+
+.sliderContainer span {
+  color: var(--color-text-0);
+  display: inline-block;
+  margin: 4px;
+}
+
+.linkButton {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: white;
+  width: 60%;
+  text-decoration: none;
+  color: var(--color-text-1);
+  font-size: 1.4rem;
+  border-radius: 1px;
+}
+
+.linkButton:hover {
+  opacity: 0.95;
+}
+
+@keyframes change {
+  8% {
+    transform: translate3d(0, 0, 0);
+  }
+  13%,
+  21% {
+    transform: translate3d(0, -40px, 0);
+  }
+  26%,
+  34% {
+    transform: translate3d(0, -80px, 0);
+  }
+  39%,
+  47% {
+    transform: translate3d(0, -120px, 0);
+  }
+  52%,
+  60% {
+    transform: translate3d(0, -160px, 0);
+  }
+  65%,
+  95% {
+    transform: translate3d(0, -200px, 0);
+  }
+  100% {
+    transform: translate3d(0, -240px, 0);
+  }
+}

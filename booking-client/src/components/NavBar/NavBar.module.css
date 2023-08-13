@@ -1,11 +1,10 @@
 .mainHeader {
   background-color: var(--color-brand--1);
   color: var(--color-text-0);
+  padding-bottom: 1rem;
 }
 
 .navBar {
-  /* margin: 0 8.5rem; */
-
   display: flex;
 }
 
@@ -13,7 +12,6 @@
   list-style: none;
   display: flex;
   gap: 1.2rem;
-  padding: 1.2rem 0;
 }
 
 .optionsList a {

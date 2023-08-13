@@ -1,0 +1,37 @@
+.pin {
+  display: flex;
+  flex-direction: column;
+}
+.pinBody {
+  position: relative;
+  z-index: 1;
+}
+.pinBody svg {
+  fill: var(--color-text-1);
+  stroke: white;
+  stroke-width: 1px;
+}
+
+.pinCenter {
+  display: block;
+  position: absolute;
+
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 35%;
+  aspect-ratio: 1;
+  pointer-events: none;
+  z-index: 2;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.pinShadow {
+  align-self: center;
+  width: 70%;
+  opacity: 0.6;
+  fill: grey;
+  margin-top: -30%;
+}

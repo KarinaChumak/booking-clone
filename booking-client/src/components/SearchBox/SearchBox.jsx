@@ -7,7 +7,7 @@ import styles from './SearchBox.module.css';
 
 import Checkbox from '../Checkbox/Checkbox';
 
-function SearchBox() {
+function SearchBox({ showTravelOptions = false }) {
   const [openDate, setOpenDate] = useState(false);
   const [dates, setDates] = useState([
     {
@@ -92,22 +92,24 @@ function SearchBox() {
         <button className={styles.btn}>Search</button>
       </div>
 
-      <div className={styles.travelOptions}>
-        <Checkbox
-          isChecked={entireAptisChecked}
-          onClick={handleToggleApt}
-          checkbox_id="entireApt"
-        >
-          I&apos;m looking for an entire home or apartment
-        </Checkbox>
-        <Checkbox
-          isChecked={travelWorkChecked}
-          onClick={handleToggleWorkTrip}
-          checkbox_id="travelForWork"
-        >
-          I&apos;m travelling for work
-        </Checkbox>
-      </div>
+      {showTravelOptions && (
+        <div className={styles.travelOptions}>
+          <Checkbox
+            isChecked={entireAptisChecked}
+            onClick={handleToggleApt}
+            checkbox_id="entireApt"
+          >
+            I&apos;m looking for an entire home or apartment
+          </Checkbox>
+          <Checkbox
+            isChecked={travelWorkChecked}
+            onClick={handleToggleWorkTrip}
+            checkbox_id="travelForWork"
+          >
+            I&apos;m travelling for work
+          </Checkbox>
+        </div>
+      )}
     </form>
   );
 }
